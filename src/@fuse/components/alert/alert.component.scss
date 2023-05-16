@@ -1,0 +1,32 @@
+fuse-alert {
+  display: block;
+
+  /* Common */
+  .fuse-alert-container {
+    position: relative;
+    display: flex;
+    padding: 16px;
+    font-size: 14px;
+    line-height: 1;
+    border: 1px solid blue;
+
+    /* All icons */
+
+  }
+
+
+  &.fuse-alert-appearance-outline {
+
+    .fuse-alert-container {
+      border-radius: 6px;
+    }
+    &.fuse-alert-type-primary {
+      .fuse-alert-container {
+        .fuse-alert-message {
+
+      }
+      }
+    }
+
+  }
+}
