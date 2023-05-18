@@ -1,5 +1,6 @@
 import { Route } from '@angular/router';
 import { AuthGuard } from './core/auth/guards/auth.guard';
+import { NoAuthGuard } from './core/auth/guards/noAuth.guard';
 
 export const appRoutes: Route[] = [
   // Redirect empty path to '/example'
@@ -19,6 +20,7 @@ export const appRoutes: Route[] = [
   // Auth routes for guests
   {
     path: '',
+    canMatch: [NoAuthGuard],
     children: [
       {
         path: 'sign-in',
@@ -27,6 +29,14 @@ export const appRoutes: Route[] = [
             (m) => m.SignInModule
           ),
       },
+    ],
+  },
+
+  //Routing for authentication user
+  {
+    path: '',
+    canMatch: [AuthGuard],
+    children: [
       {
         path: 'sign-out',
         loadChildren: () =>
@@ -38,7 +48,6 @@ export const appRoutes: Route[] = [
   },
 
   //Admin routes
-
   {
     path: '',
     canMatch: [AuthGuard],
