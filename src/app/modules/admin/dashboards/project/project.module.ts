@@ -3,16 +3,17 @@ import { CommonModule } from '@angular/common';
 import { ProjectComponent } from './project.component';
 import { RouterModule } from '@angular/router';
 import { projectRoutes } from './project.routing';
-
-
+import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
-  declarations: [
-    ProjectComponent
-  ],
+  declarations: [ProjectComponent],
   imports: [
     RouterModule.forChild(projectRoutes),
     CommonModule,
-  ]
+    MatIconModule,
+    MatButtonModule,
+    MatButtonModule,
+  ],
 })
-export class ProjectModule { }
+export class ProjectModule {}
