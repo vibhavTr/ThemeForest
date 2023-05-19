@@ -28,6 +28,4 @@ export class AppComponent {
       rememberMe: [''],
     });
   }
-
-  signIn(){}
 }

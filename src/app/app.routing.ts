@@ -1,6 +1,7 @@
 import { Route } from '@angular/router';
 import { AuthGuard } from './core/auth/guards/auth.guard';
 import { NoAuthGuard } from './core/auth/guards/noAuth.guard';
+import { LayoutComponent } from './layout/layout.component';
 
 export const appRoutes: Route[] = [
   // Redirect empty path to '/example'
@@ -50,6 +51,7 @@ export const appRoutes: Route[] = [
   //Admin routes
   {
     path: '',
+    component: LayoutComponent,
     canMatch: [AuthGuard],
     children: [
       {

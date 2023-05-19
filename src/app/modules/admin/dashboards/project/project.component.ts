@@ -8,7 +8,7 @@ import { Router } from '@angular/router';
 })
 export class ProjectComponent implements OnInit {
   constructor(private _router: Router) {}
-
+  selectedProject: string = 'ACME Corp. Backend App';
   ngOnInit(): void {}
 
   signOut() {

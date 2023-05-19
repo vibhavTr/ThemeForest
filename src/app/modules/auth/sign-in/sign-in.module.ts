@@ -11,7 +11,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { RouterModule } from '@angular/router';
 import { authSignInRoutes } from './sign-in.routing';
 import { FuseAlertModule } from 'src/@fuse/components/alert/alert.module';
-
+import { LoadingBarModule } from 'src/@fuse/components/loading-bar/loading-bar.module';
 
 @NgModule({
   declarations: [SignInComponent],
@@ -23,10 +23,10 @@ import { FuseAlertModule } from 'src/@fuse/components/alert/alert.module';
     MatInputModule,
     FormsModule,
     MatIconModule,
+    LoadingBarModule,
     ReactiveFormsModule,
     HttpClientModule,
-    FuseAlertModule
+    FuseAlertModule,
   ],
 })
-export class SignInModule {
-}
+export class SignInModule {}

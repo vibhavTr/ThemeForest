@@ -14,6 +14,8 @@ import { ExtraOptions, RouterModule, PreloadAllModules } from '@angular/router';
 import { appRoutes } from './app.routing';
 import { FuseMockApiModule } from 'src/@fuse/lib/mock-api';
 import { mockApiServices } from './mock-api';
+import { FuseModule } from 'src/@fuse/fuse.module';
+import { LayoutModule } from './layout/layout.module';
 
 const routerConfig: ExtraOptions = {
   preloadingStrategy: PreloadAllModules,
@@ -26,6 +28,8 @@ const routerConfig: ExtraOptions = {
   imports: [
     RouterModule.forRoot(appRoutes),
     FuseMockApiModule.forRoot(mockApiServices),
+    FuseModule,
+    LayoutModule,
     BrowserModule,
     FuseAlertModule,
     MatCheckboxModule,
