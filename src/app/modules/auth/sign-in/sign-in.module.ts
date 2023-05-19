@@ -1,5 +1,4 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import { SignInComponent } from './sign-in.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
@@ -11,8 +10,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { RouterModule } from '@angular/router';
 import { authSignInRoutes } from './sign-in.routing';
 import { FuseAlertModule } from 'src/@fuse/components/alert/alert.module';
-import { LoadingBarModule } from 'src/@fuse/components/loading-bar/loading-bar.module';
-
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 @NgModule({
   declarations: [SignInComponent],
   imports: [
@@ -23,7 +21,7 @@ import { LoadingBarModule } from 'src/@fuse/components/loading-bar/loading-bar.m
     MatInputModule,
     FormsModule,
     MatIconModule,
-    LoadingBarModule,
+    MatProgressSpinnerModule,
     ReactiveFormsModule,
     HttpClientModule,
     FuseAlertModule,
