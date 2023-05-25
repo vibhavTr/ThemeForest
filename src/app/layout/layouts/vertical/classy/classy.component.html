@@ -1,4 +1,19 @@
-<app-vertical class="dark bg-gray-900 print:hidden"></app-vertical>
+<div class="dark bg-gray-900 print:hidden">
+  <!-- Navigation header hook -->
+  <ng-container>
+    <div class="flex items-center w-full p-4 pl-6">
+      <!-- Logo -->
+      <div class="flex items-center justify-center border-l-pink-600">
+        <img class="w-8" src="/src/assets/images/logo/logo.svg" />
+      </div>
+      <!-- Components -->
+      <div class="flex items-center ml-auto">
+        <app-notifications></app-notifications>
+        <app-user [showAvatar]="false"></app-user>
+      </div>
+    </div>
+  </ng-container>
+</div>
 
 <div class="flex flex-col flex-auto w-full min-w-0">
   <div

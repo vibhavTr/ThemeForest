@@ -8,6 +8,7 @@ import { NotificationsModule } from 'src/app/layout/common/notifications/notific
 import { MessagesModule } from 'src/app/layout/common/messages/messages.module';
 import { ShortcutsModule } from 'src/app/layout/common/shortcuts/shortcuts.module';
 import { NavigationModule } from 'src/@fuse/components/navigation/navigation.module';
+import { UserModule } from 'src/app/layout/common/user/user.module';
 
 @NgModule({
   declarations: [ClassyComponent],
@@ -20,6 +21,7 @@ import { NavigationModule } from 'src/@fuse/components/navigation/navigation.mod
     MessagesModule,
     ShortcutsModule,
     NavigationModule,
+    UserModule,
   ],
   exports: [ClassyComponent],
 })
