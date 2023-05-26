@@ -16,7 +16,7 @@ import {
   templateUrl: './search.component.html',
   styleUrls: ['./search.component.scss'],
 })
-export class SearchComponent implements OnInit, OnChanges, OnDestroy {
+export class SearchComponent {
   @Input() appearance: 'basic' | 'bar' = 'basic';
   @Input() debounce: number = 3000;
   @Input() minLength: number = 2;
@@ -47,15 +47,15 @@ export class SearchComponent implements OnInit, OnChanges, OnDestroy {
       });
     }
   }
-  ngOnChanges(changes: SimpleChanges): void {
-    throw new Error('Method not implemented.');
-  }
-  ngOnDestroy(): void {
-    throw new Error('Method not implemented.');
-  }
-  ngOnInit(): void {
-    throw new Error('Method not implemented.');
-  }
+  // ngOnChanges(changes: SimpleChanges): void {
+  //   throw new Error('Method not implemented.');
+  // }
+  // ngOnDestroy(): void {
+  //   throw new Error('Method not implemented.');
+  // }
+  // ngOnInit(): void {
+  //   throw new Error('Method not implemented.');
+  // }
 
   open(): void {
     // return if its already opened

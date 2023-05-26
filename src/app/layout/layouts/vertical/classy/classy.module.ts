@@ -9,6 +9,7 @@ import { MessagesModule } from 'src/app/layout/common/messages/messages.module';
 import { ShortcutsModule } from 'src/app/layout/common/shortcuts/shortcuts.module';
 import { NavigationModule } from 'src/@fuse/components/navigation/navigation.module';
 import { UserModule } from 'src/app/layout/common/user/user.module';
+import { FullScreenModule } from 'src/@fuse/components/full-screen/full-screen.module';
 
 @NgModule({
   declarations: [ClassyComponent],
@@ -22,6 +23,7 @@ import { UserModule } from 'src/app/layout/common/user/user.module';
     ShortcutsModule,
     NavigationModule,
     UserModule,
+    FullScreenModule,
   ],
   exports: [ClassyComponent],
 })
