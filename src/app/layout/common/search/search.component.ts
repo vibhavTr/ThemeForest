@@ -4,10 +4,6 @@ import {
   ElementRef,
   HostBinding,
   Input,
-  OnChanges,
-  OnDestroy,
-  OnInit,
-  SimpleChanges,
   ViewChild,
 } from '@angular/core';
 
